@@ -8,6 +8,14 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-BRT6.aml</string>
+				<key>Path</key>
+				<string>SSDT-BRT6.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-EC-USBX.aml</string>
 				<key>Path</key>
 				<string>SSDT-EC-USBX.aml</string>
@@ -51,6 +59,20 @@
 				<data>oAqTU1RBUwE=</data>
 				<key>Replace</key>
 				<data>oAqRCv8L//8=</data>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Rename method BRT6 to BRTX to connect to SSDT-BRT6.aml (fixes brightness keys)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Find</key>
+				<data>IEJSVDY=</data>
+				<key>Replace</key>
+				<data>IEJSVFg=</data>
 				<key>Enabled</key>
 				<true/>
 			</dict>
