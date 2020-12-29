@@ -4,14 +4,16 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 ## Usage
 
-1. The `config.plist` is missing `PlatformInfo` details. Follow the [Dortania guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo) to generate serials, using the `MacBookPro15,2` model.
-2. This config contains the `AirportItlwm` 1.1.0 kext for the build-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
-3. Update any kexts that you want to update.
-4. Check the included SSDTs to make sure they match your ACPI information (it can change between motherboard variants and UEFI versions). Use the [Dortania guide](https://dortania.github.io/Getting-Started-With-ACPI/).
-5. If you plan to use this on a USB drive, temporarily change [ScanPolicy](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#security) to `0`.
-6. Disable CFG-Lock. This option is not avaliable in the UEFI settings, so the setting address must be extracted and set manually.
-   Follow [this guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock).
-7. Finally, copy the contents of this repo to your EFI partition.
+1. Copy the contents of this repo to your EFI partition.
+2. The `config.plist` is missing `PlatformInfo` details. Follow the [Dortania guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo) to generate serials, using the `MacBookPro15,2` model.
+3. This config contains the `AirportItlwm` 1.1.0 kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
+4. Update any kexts that you want to update.
+5. Check the included SSDTs to make sure they match your ACPI information (it can change between motherboard variants and UEFI versions). Use the [Dortania guide](https://dortania.github.io/Getting-Started-With-ACPI/).
+6. If you plan to use this on a USB drive, temporarily change [ScanPolicy](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#security) to `0`.
+7. Disable CFG Lock, and set the DVMT Pre-Allocated value to 64M. These options are not avaliable in the UEFI settings, so the setting addresses must be extracted and set manually.
+   Follow [this guide](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell), setting DVMT Pre-Allocated as well as CFG Lock. If you're on a relevant UEFI version, you can use the addresses further down in this README so you don't have to extract them yourself.
+8. Add `\EFI\OC\Bootstrap\Bootstrap.efi` as a boot option in the UEFI settings.
+9. Boot the new boot option, and enjoy macOS!
 
 ## Known issues
 
@@ -20,9 +22,58 @@ An OpenCore configuration for the Dell Inspiron 7586.
 - The brightness keys don't work.
   - This may be due to the use of the fake `EC` device; it may be possible to get the keys to work by renaming `ECDV` to `EC` instead of creating a new `EC`, along with `SSDT-BRT6`.
   - As a workaround, Fn+S and Fn+B send the F14 and F15 keycodes to macOS, and can be used to adjust the brightness instead.
+  - Ongoing experiments regarding this issue will be done in another branch.
 - Sleeping may cause kernel panics when waking up.
 - Power management is enabled, but unconfigured. To configure it to your liking, follow [this part of the Dortania power management guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).
 - USB 3 hot-plugging does not work.
+
+## Notes
+
+### Graphics
+
+- Some variants of the 7586 use a display panel that causes color banding issues in macOS. The only known fix for this is to get a new display. I've had several display replacements due to various issues, and only the first display that came with my laptop had issues, so (in Australia at least) it seems that good panels (product:vendor 0x6af:0x23ed, model B156HAN, also known as AUO23ED) are in use now.
+
+- I configure [LSPCON](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md#lspcon-driver-support-to-enable-displayport-to-hdmi-20-output-on-igpu) to output a HDMI 1.4 signal, as HDMI 2.0 mode seems to cause issues with one of my external displays. If you use a display that requires HDMI 2.0, you need to change the configuration (with the help of the linked documentation).
+- The `force-online` option is enabled in the GPU configuration. Without this option, one of my monitors needs to be turned off and on again after starting macOS. If this option causes issues for you, you can remove it.
+
+### UEFI
+
+Here are the variable addresses and values of some important UEFI settings. Default values are in bold. Make sure your **UEFI version matches**, or else you can **permenently brick** your laptop!
+
+`1.8.0`:
+
+- CFG Lock:
+  - Address: `0x5C3`
+  - Values:
+    | <u>Setting</u> | <u>Value</u> |
+    | :----------------- | ---------------- |
+    | Disabled | 0x0 |
+    | **Enabled**        | **0x1**          |
+    
+  
+- DVMT Pre-Allocated:
+  - Address: `0x8E5`
+  - Values:
+    | <u>Setting</u> | <u>Value</u> |
+    | -------------- | ------------ |
+    | 0M             | 0x0          |
+    | **32M**        | **0x1**      |
+    | 64M            | 0x2          |
+    | 4M             | 0xF0         |
+    | 8M             | 0xF1         |
+    | 12M            | 0xF2         |
+    | 16M            | 0xF3         |
+    | 20M            | 0xF4         |
+    | 24M            | 0xF5         |
+    | 28M            | 0xF6         |
+    | 32M/F7         | 0xF7         |
+    | 36M            | 0xF8         |
+    | 40M            | 0xF9         |
+    | 44M            | 0xFA         |
+    | 48M            | 0xFB         |
+    | 52M            | 0xFC         |
+    | 56M            | 0xFD         |
+    | 60M            | 0xFE         |
 
 ## Creating your own config
 
