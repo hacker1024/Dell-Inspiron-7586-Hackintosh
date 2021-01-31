@@ -808,7 +808,7 @@
 			<key>Timeout</key>
 			<integer>5</integer>
 			<key>PickerVariant</key>
-			<string>Modern</string>
+			<string>Auto</string>
 		</dict>
 		<key>Debug</key>
 		<dict>
