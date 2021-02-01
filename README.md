@@ -6,14 +6,15 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 1. Copy the contents of this repo to your EFI partition.
 2. The `config.plist` is missing `PlatformInfo` details. Follow the [Dortania guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo) to generate serials, using the `MacBookPro15,2` model.
-3. This config contains the `Itlwm` 1.1.0 kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
+3. This config contains the `AirportItlwm` `v1.2.0` kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
 4. Update any kexts that you want to update.
 5. Check the included SSDTs to make sure they match your ACPI information (it can change between motherboard variants and UEFI versions). Use the [Dortania guide](https://dortania.github.io/Getting-Started-With-ACPI/).
-6. If you plan to use this on a USB drive, temporarily change [ScanPolicy](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#security) to `0`.
-7. Disable CFG Lock, and set the DVMT Pre-Allocated value to 64M. These options are not avaliable in the UEFI settings, so the setting addresses must be extracted and set manually.
+6. Power management is configured with standard MacBook Pro behaviour and a minimum clock speed of 800MHz. You may wish to change this; to do so, generate a new `CPUFriendDataProvider.kext` following the [Dortania guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).
+7. If you plan to use this on a USB drive, temporarily change [ScanPolicy](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#security) to `0`.
+8. Disable CFG Lock, and set the DVMT Pre-Allocated value to 64M. These options are not avaliable in the UEFI settings, so the setting addresses must be extracted and set manually.
    Follow [this guide](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell), setting DVMT Pre-Allocated as well as CFG Lock. If you're on a relevant UEFI version, you can use the addresses further down in this README so you don't have to extract them yourself.
-8. Add `\EFI\OC\Bootstrap\Bootstrap.efi` as a boot option in the UEFI settings.
-9. Boot the new boot option, and enjoy macOS!
+9. Add `\EFI\OC\Bootstrap\Bootstrap.efi` as a boot option in the UEFI settings.
+10. Boot the new boot option, and enjoy macOS!
 
 ## Known issues
 
@@ -23,9 +24,10 @@ An OpenCore configuration for the Dell Inspiron 7586.
   - This may be due to the use of the fake `EC` device; it may be possible to get the keys to work by renaming `ECDV` to `EC` instead of creating a new `EC`, along with `SSDT-BRT6`.
   - As a workaround, Fn+S and Fn+B send the F14 and F15 keycodes to macOS, and can be used to adjust the brightness instead.
   - Ongoing experiments regarding this issue will be done in another branch.
-- Sleeping may cause kernel panics when waking up.
-- Power management is enabled, but unconfigured. To configure it to your liking, follow [this part of the Dortania power management guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).
-- USB 3 hot-plugging does not work.
+- USB 3 hot-plugging may not work.
+- When using the internal keyboard to enter a FileVault password, it may be incorrect.
+- ~~Sleeping may cause kernel panics when waking up.~~
+- ~~Power management is enabled, but unconfigured. To configure it to your liking, follow [this part of the Dortania power management guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).~~
 
 ## Notes
 
