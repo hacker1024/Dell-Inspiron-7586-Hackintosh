@@ -948,21 +948,6 @@
 			<dict>
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
-				<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-				<dict>
-					<key>SystemAudioVolume</key>
-					<data>Rg==</data>
-					<key>boot-args</key>
-					<string></string>
-					<key>run-efi-updater</key>
-					<string>No</string>
-					<key>csr-active-config</key>
-					<data>AAAAAA==</data>
-					<key>prev-lang:kbd</key>
-					<string>en-AU:0</string>
-					<key># csr-active-config</key>
-					<data>/w8AAA==</data>
-				</dict>
 				<key>UIScale</key>
 				<data>AQ==</data>
 			</dict>
@@ -970,6 +955,19 @@
 			<dict>
 				<key>rtc-blacklist</key>
 				<data></data>
+			</dict>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<dict>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
+				<key>boot-args</key>
+				<string></string>
+				<key>run-efi-updater</key>
+				<string>No</string>
+				<key>csr-active-config</key>
+				<data>AAAAAA==</data>
+				<key>prev-lang:kbd</key>
+				<string>en-AU:0</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
