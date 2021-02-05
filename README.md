@@ -13,7 +13,7 @@ An OpenCore configuration for the Dell Inspiron 7586.
 7. If you plan to use this on a USB drive, temporarily change [ScanPolicy](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#security) to `0`.
 8. Disable CFG Lock, and set the DVMT Pre-Allocated value to 64M. These options are not avaliable in the UEFI settings, so the setting addresses must be extracted and set manually.
    Follow [this guide](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell), setting DVMT Pre-Allocated as well as CFG Lock. If you're on a relevant UEFI version, you can use the addresses further down in this README so you don't have to extract them yourself.
-9. Add `\EFI\OC\Bootstrap\Bootstrap.efi` as a boot option in the UEFI settings.
+9. Add `\EFI\OC\OpenCore.efi` as a boot option in the UEFI settings.
 10. Boot the new boot option, and enjoy macOS!
 
 ## Known issues
@@ -30,6 +30,15 @@ An OpenCore configuration for the Dell Inspiron 7586.
 - ~~Power management is enabled, but unconfigured. To configure it to your liking, follow [this part of the Dortania power management guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).~~
 
 ## Notes
+
+### Upgrading
+
+- OpenCore v0.6.6
+  - OpenCore v0.6.6 changes the boot process. Thankfully, Dell provide great boot configuration tools in the boot settings. Instead of following the Dortania upgrade guide, do the following:
+    1. Open the UEFI settings
+    2. Open the boot configuration page
+    3. Delete the existing OpenCore entry
+    4. Make a new entry launching `\EFI\OC\OpenCore.efi`
 
 ### Graphics
 
