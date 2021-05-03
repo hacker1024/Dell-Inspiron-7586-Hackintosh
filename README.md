@@ -60,7 +60,6 @@ Here are the variable addresses and values of some important UEFI settings. Defa
     | :----------------- | ---------------- |
     | Disabled | 0x0 |
     | **Enabled**        | **0x1**          |
-    
   
 - DVMT Pre-Allocated:
   - Address: `0x8E5`
