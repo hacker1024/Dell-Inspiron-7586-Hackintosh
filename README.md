@@ -110,7 +110,6 @@ Most of the Dortania Whiskey Lake Install Guide applies to this laptop, with a f
   - AppleALC - Audio
   - IntelBluetoothFirmware, IntelBluetoothInjector - Bluetooth
   - Lilu - Needed by other kexts
-  - NoTouchID - To disable Touch ID (the Goodix sensor will not work)
   - NVMeFix - For proper NVMe power/thermal management
   - VirtualSMC - For SMC emulation
     - SMCBatteryManager - Battery status
