@@ -117,7 +117,8 @@ Most of the Dortania Whiskey Lake Install Guide applies to this laptop, with a f
     - SMCDellSensors - Fan control and temperature monitoring
     - SMCProcessor - Temperature monitoring
     - SMCSuperIO - Fan monitoring
-  - USBMap - USB mapping. Get this one from this repo, it's custom. (USB 3 is not configured, though.)
+  - USBToolBox - For USB mapping
+  - USBMap - The USBToolBox configuration. Get this one from this repo, it's custom.
   - VoodooI2C, VoodooI2CHID - Touchpad and touchscreen
   - VoodooP2SController - Keyboard (The non-keyboard plugins can be disabled.)
   - WhateverGreen - Integrated graphics
