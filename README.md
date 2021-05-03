@@ -6,7 +6,7 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 1. Copy the contents of this repo to your EFI partition.
 2. The `config.plist` is missing `PlatformInfo` details. Follow the [Dortania guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo) to generate serials, using the `MacBookPro15,2` model.
-3. This config contains the `AirportItlwm` `v1.2.0` kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
+3. This config contains the `AirportItlwm` `v1.3.0` kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
 4. Update any kexts that you want to update.
 5. Check the included SSDTs to make sure they match your ACPI information (it can change between motherboard variants and UEFI versions). Use the [Dortania guide](https://dortania.github.io/Getting-Started-With-ACPI/).
 6. Power management is configured with standard MacBook Pro behaviour and a minimum clock speed of 800MHz. You may wish to change this; to do so, generate a new `CPUFriendDataProvider.kext` following the [Dortania guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).
