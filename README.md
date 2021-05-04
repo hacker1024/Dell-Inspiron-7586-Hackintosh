@@ -4,7 +4,7 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 ## Usage
 
-1. Copy the contents of this repo to your EFI partition.
+1. Copy the contents of this repo to your EFI partition. Make sure to recursively clone to include submodules!
 2. The `config.plist` is missing `PlatformInfo` details. Follow the [Dortania guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo) to generate serials, using the `MacBookPro15,2` model.
 3. This config contains the `AirportItlwm` `v1.3.0` kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
 4. Update any kexts that you want to update.
@@ -13,7 +13,7 @@ An OpenCore configuration for the Dell Inspiron 7586.
 7. If you plan to use this on a USB drive, temporarily change [ScanPolicy](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#security) to `0`.
 8. Disable CFG Lock, and set the DVMT Pre-Allocated value to 64M. These options are not avaliable in the UEFI settings, so the setting addresses must be extracted and set manually.
    Follow [this guide](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell), setting DVMT Pre-Allocated as well as CFG Lock. If you're on a relevant UEFI version, you can use the addresses further down in this README so you don't have to extract them yourself.
-9. Add `\EFI\OC\OpenCore.efi` as a boot option in the UEFI settings.
+9. Add `\EFI\OC\OpenCore.efi` as a boot option in the UEFI settings (or, alternatively, `\EFI\refind\refind_x64.efi`, if you want to [dual boot](#dual-booting)).
 10. Boot the new boot option, and enjoy macOS!
 
 ## Known issues
