@@ -31,6 +31,28 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 ## Notes
 
+### Dual booting
+
+Other operating systems don't particularly like the ACPI and SMBIOS modifications on this machine.
+To dual boot, I suggest these two methods:
+
+1. Use the UEFI boot selection screen by pressing F12 when you want to boot into a different OS
+2. Use a initial bootloader like rEFInd to choose an OS on startup
+
+Personally, I go with option 2, as I need to use Windows a lot for pen input, gaming, and media (AFAIK, macOS can't utilise HDR properly).
+Pressing F12 every time gets a bit tedious.
+
+A copy of rEFInd is included in this reporitory, with the following configuration:
+- My fork of [refind-theme-regular](https://github.com/hacker1024/refind-theme-regular) is used as the theme
+- OS scanning is disabled
+- Touch and mouse input is enabled (the trackpad is buggy, though)
+- OpenCore and Windows menuentries are configured
+- The last booted entry (either OpenCore or Windows) is automatically booted after 20s. This is nice for updates.
+- NVRAM is used for rEFInd storage
+
+Feel free to configure rEFInd to your liking.  
+If you use rEFInd, make sure to initialize this repository's submodules (or clone it recursively).
+
 ### Upgrading
 
 - OpenCore v0.6.6
