@@ -1,6 +1,7 @@
 ## Unrelated EFI files
 EFI/*
 !EFI/OC
+!EFI/refind
 
 ## macOS
 # General
