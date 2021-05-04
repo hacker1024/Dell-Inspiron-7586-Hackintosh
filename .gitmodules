@@ -1,0 +1,3 @@
+[submodule "EFI/refind/refind-theme-regular"]
+	path = EFI/refind/refind-theme-regular
+	url = git://github.com/hacker1024/refind-theme-regular.git
