@@ -927,6 +927,24 @@
 				<key>TextMode</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ACPI Dumper</string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string>-b -z</string>
+				<key>Path</key>
+				<string>acpidump.efi</string>
+				<key>Name</key>
+				<string>Dump ACPI</string>
+				<key>RealPath</key>
+				<true/>
+				<key>TextMode</key>
+				<true/>
+			</dict>
 		</array>
 	</dict>
 	<key>NVRAM</key>
