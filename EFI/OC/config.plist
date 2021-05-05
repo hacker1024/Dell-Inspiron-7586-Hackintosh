@@ -38,6 +38,14 @@
 				<key>Enabled</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-dGPU-Off.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-dGPU-Off.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
