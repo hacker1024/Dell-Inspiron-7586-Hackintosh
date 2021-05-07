@@ -89,6 +89,17 @@
 					<key>HS05</key>
 					<dict>
 						<key>#comment</key>
+						<string>SD card reader</string>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						BwAAAA==
+						</data>
+					</dict>
+					<key>HS06</key>
+					<dict>
+						<key>#comment</key>
 						<string>Wi-Fi</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
