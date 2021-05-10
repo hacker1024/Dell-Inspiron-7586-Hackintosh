@@ -2,6 +2,8 @@
 
 An OpenCore configuration for the Dell Inspiron 7586.
 
+**This branch has modifications for my (hacker1024's) specific device, like USB ethernet and Razer keyboard drivers.**
+
 ## Usage
 
 1. Copy the contents of this repo to your EFI partition. Make sure to recursively clone to include submodules!
