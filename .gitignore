@@ -4,6 +4,9 @@ EFI/*
 !EFI/refind
 !EFI/Tools
 
+## Unrelated bootloader files
+boot/grub
+
 ## macOS
 # General
 .DS_Store
