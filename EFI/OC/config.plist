@@ -989,6 +989,8 @@
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-AU:0</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1281,6 +1283,8 @@
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
 			<integer>1</integer>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
