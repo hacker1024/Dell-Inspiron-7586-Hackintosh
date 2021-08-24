@@ -6,6 +6,7 @@ EFI/*
 
 ## Unrelated bootloader files
 boot/grub
+loader
 
 ## macOS
 # General
