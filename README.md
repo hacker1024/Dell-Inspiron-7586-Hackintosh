@@ -27,6 +27,7 @@ An OpenCore configuration for the Dell Inspiron 7586.
   - As a workaround, Fn+S and Fn+B send the F14 and F15 keycodes to macOS, and can be used to adjust the brightness instead.
   - Ongoing experiments regarding this issue will be done in another branch.
 - When using the internal keyboard to enter a FileVault password, it may be incorrect.
+- Bluetooth does not work on Monterey (https://github.com/hacker1024/Dell-Inspiron-7586-Hackintosh/issues/4).
 - ~~USB 3 hot-plugging may not work.~~
 - ~~Sleeping may cause kernel panics when waking up.~~
 - ~~Power management is enabled, but unconfigured. To configure it to your liking, follow [this part of the Dortania power management guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#using-cpu-friend).~~
