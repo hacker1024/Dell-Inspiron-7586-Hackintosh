@@ -1104,6 +1104,8 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>OpenRuntime.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Enabled</key>
@@ -1112,6 +1114,8 @@
 				<string>OpenRuntime.efi</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>OpenCanopy.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Enabled</key>
@@ -1120,6 +1124,8 @@
 				<string>OpenCanopy.efi</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Ps2KeyboardDxe.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Enabled</key>
@@ -1128,6 +1134,8 @@
 				<string>Ps2KeyboardDxe.efi</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>HfsPlus.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Enabled</key>
