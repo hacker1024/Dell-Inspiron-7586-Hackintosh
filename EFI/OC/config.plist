@@ -132,6 +132,8 @@
 			<false/>
 			<key>ForceBooterSignature</key>
 			<false/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 		</dict>
 		<key>Patch</key>
 		<array/>
@@ -1257,6 +1259,8 @@
 			<false/>
 			<key>ForceOcWriteFlash</key>
 			<false/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
