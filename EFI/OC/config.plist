@@ -46,6 +46,30 @@
 				<key>Path</key>
 				<string>SSDT-dGPU-Off.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-BRT6.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BRT6.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-XOSI.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-XOSI.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-DBG.aml</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-DBG.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -68,6 +92,46 @@
 				<data>oExIVVNUUA==</data>
 				<key>Replace</key>
 				<data>oExIAaOjow==</data>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable the OSID check in the SMEE method (required for brightness keys)</string>
+				<key>Find</key>
+				<data>oCqSlVwuX1NCX09TSUQKIA==</data>
+				<key>Replace</key>
+				<data>o6Ojo6Ojo6Ojo6Ojo6AdAQ==</data>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Rename method BRT6 to BRTX to connect to SSDT-BRT6.aml (fixes brightness keys)</string>
+				<key>Find</key>
+				<data>QlJUNgI=</data>
+				<key>Replace</key>
+				<data>QlJUWAI=</data>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Change _OSID to XSID (to avoid match against _OSI patch)</string>
+				<key>Find</key>
+				<data>T1NJRA==</data>
+				<key>Replace</key>
+				<data>WFNJRA==</data>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Change _OSI to XOSI</string>
+				<key>Find</key>
+				<data>X09TSQ==</data>
+				<key>Replace</key>
+				<data>WE9TSQ==</data>
 				<key>Enabled</key>
 				<true/>
 			</dict>
