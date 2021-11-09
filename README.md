@@ -22,11 +22,8 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 - The headphone jack is unstable.
   - An AppleALC `layout-id` of `77` is used in this config, as it provides the best speaker quality; if you require the use of the headphone jack, `13` is a better option. See [this post](https://www.tonymacx86.com/threads/dell-inspiron-7586-i7-8565u-intel-uhd-620.277104/page-15#post-2178929) for more information.
-- The brightness keys don't work.
-  - This may be due to the use of the fake `EC` device; it may be possible to get the keys to work by renaming `ECDV` to `EC` instead of creating a new `EC`, along with `SSDT-BRT6`.
-  - As a workaround, Fn+S and Fn+B send the F14 and F15 keycodes to macOS, and can be used to adjust the brightness instead.
-  - Ongoing experiments regarding this issue will be done in another branch.
 - When using the internal keyboard to enter a FileVault password, it may be incorrect.
+- ~~The brightness keys don't work.~~
 - ~~Bluetooth does not work on Monterey (https://github.com/hacker1024/Dell-Inspiron-7586-Hackintosh/issues/4).~~
 - ~~USB 3 hot-plugging may not work.~~
 - ~~Sleeping may cause kernel panics when waking up.~~
