@@ -725,22 +725,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleTyMCEDriver</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-			</dict>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict>
 			<key>DummyPowerManagement</key>
@@ -879,6 +864,8 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
+			<key>LogModules</key>
+			<string>*</string>
 			<key>SerialInit</key>
 			<false/>
 			<key>SysReport</key>
@@ -1150,19 +1137,23 @@
 			<integer>0</integer>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
-			<key>AudioOut</key>
-			<integer>0</integer>
+			<key>AudioOutMask</key>
+			<integer>-1</integer>
 			<key>AudioSupport</key>
 			<false/>
-			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<key>MaximumGain</key>
+			<integer>-15</integer>
+			<key>MinimumAssistGain</key>
+			<integer>-30</integer>
+			<key>MinimumAudibleGain</key>
+			<integer>-128</integer>
 			<key>PlayChime</key>
 			<string>Disabled</string>
-			<key>VolumeAmplifier</key>
-			<integer>0</integer>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>ResetTrafficClass</key>
+			<false/>
+			<key>DisconnectHda</key>
 			<false/>
 		</dict>
 		<key>ConnectDrivers</key>
@@ -1243,6 +1234,8 @@
 			<false/>
 			<key>ProvideConsoleGop</key>
 			<true/>
+			<key>ReconnectGraphicsOnConnect</key>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
@@ -1257,6 +1250,8 @@
 			<false/>
 			<key>GopPassThrough</key>
 			<string>Disabled</string>
+			<key>UIScale</key>
+			<integer>2</integer>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1325,6 +1320,8 @@
 			<false/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
+			<key>EnableVmx</key>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
@@ -1369,6 +1366,12 @@
 			<integer>1</integer>
 			<key>GraphicsInputMirroring</key>
 			<true/>
+			<key>PointerPollMask</key>
+			<integer>-1</integer>
+			<key>PointerPollMax</key>
+			<integer>0</integer>
+			<key>PointerPollMin</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>
