@@ -6,8 +6,8 @@ An OpenCore configuration for the Dell Inspiron 7586.
 
 1. Copy the contents of this repo to your EFI partition. Make sure to recursively clone to include submodules!
 2. The `config.plist` is missing `PlatformInfo` details. Follow the [Dortania guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo) to generate serials, using the `MacBookPro15,2` model.
-3. Revert [this commit](https://github.com/hacker1024/Dell-Inspiron-7586-Hackintosh/commit/27eb1ed6ce24d4a1d38d6cb2ec4226d8983cd0ca) on 1080p models.
-4. This config contains the `AirportItlwm` `v2.0.0` kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
+3. On 1080p models, revert [this commit](https://github.com/hacker1024/Dell-Inspiron-7586-Hackintosh/commit/27eb1ed6ce24d4a1d38d6cb2ec4226d8983cd0ca), and set UEFI > Output > UIScale to `1`.
+4. This config contains the `AirportItlwm` `v2.1.0` kext for the built-in Intel 9560 WiFi card. It's recommended to update this to the latest version (https://github.com/OpenIntelWireless/itlwm/releases), or remove it if you've got a different card.
    If you use itlwm, make sure to update the itlwm_cc boot argument for your country - it's set to AU (Australia) by default.
 5. Update any kexts that you want to update.
 6 Check the included SSDTs to make sure they match your ACPI information (it can change between motherboard variants and UEFI versions). Use the [Dortania guide](https://dortania.github.io/Getting-Started-With-ACPI/).
