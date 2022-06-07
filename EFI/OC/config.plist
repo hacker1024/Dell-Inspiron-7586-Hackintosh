@@ -853,7 +853,7 @@
 			<key>PickerAttributes</key>
 			<integer>3</integer>
 			<key>PickerAudioAssist</key>
-			<false/>
+			<true/>
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PollAppleHotKeys</key>
