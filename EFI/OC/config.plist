@@ -821,6 +821,10 @@
 			<integer>-1</integer>
 			<key>ProvideCurrentCpuInfo</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -881,8 +885,6 @@
 			<integer>2147483650</integer>
 			<key>LogModules</key>
 			<string>*</string>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -892,8 +894,6 @@
 		<array/>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>ApECID</key>
@@ -920,31 +920,16 @@
 			<string>Optional</string>
 			<key>BlacklistAppleUpdate</key>
 			<true/>
-			<key>AllowToggleSip</key>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
 			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>CleanNvram.efi</string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Enabled</key>
-				<true/>
-				<key>Arguments</key>
-				<string></string>
-				<key>Path</key>
-				<string>CleanNvram.efi</string>
-				<key>Name</key>
-				<string>CleanNvram.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
@@ -1214,6 +1199,26 @@
 				<true/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ResetNvramEntry.efi</string>
+				<key>Arguments</key>
+				<string>--preserve-boot</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>ResetNvramEntry.efi</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ToggleSipEntry.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>ToggleSipEntry.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
