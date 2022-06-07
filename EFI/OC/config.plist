@@ -1019,7 +1019,7 @@
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
-				<string>en-AU:0</string>
+				<string>en-AU:15</string>
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
 			</dict>
