@@ -159,7 +159,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
-			<true/>
+			<false/>
 			<key>DevirtualiseMmio</key>
 			<true/>
 			<key>DisableSingleUser</key>
