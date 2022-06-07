@@ -851,7 +851,7 @@
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>PickerAttributes</key>
-			<integer>3</integer>
+			<integer>19</integer>
 			<key>PickerAudioAssist</key>
 			<true/>
 			<key>PickerMode</key>
