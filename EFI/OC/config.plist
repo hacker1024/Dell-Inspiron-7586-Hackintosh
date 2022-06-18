@@ -214,9 +214,9 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>CQClPg==</data>
 				<key>device-id</key>
-				<data>mz4AAA==</data>
+				<data>pT4AAA==</data>
 				<key>enable-backlight-registers-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-max-pixel-clock-override</key>
