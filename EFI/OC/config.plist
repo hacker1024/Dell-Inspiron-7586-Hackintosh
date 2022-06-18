@@ -225,16 +225,16 @@
 				<data>AQAAAA==</data>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>force-online</key>
-				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi-dividers-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con1-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-preferred-lspcon-mode</key>
+				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>

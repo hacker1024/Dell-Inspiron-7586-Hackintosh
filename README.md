@@ -65,9 +65,6 @@ If you use rEFInd, make sure to initialize this repository's submodules (or clon
 
 - Some variants of the 7586 use a display panel that causes color banding issues in macOS. The only known fix for this is to get a new display. ~~I've had several display replacements due to various issues, and only the first display that came with my laptop had issues, so (in Australia at least) it seems that good panels (product:vendor 0x6af:0x23ed, model B156HAN, also known as AUO23ED) are in use now.~~
 
-- I configure [LSPCON](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md#lspcon-driver-support-to-enable-displayport-to-hdmi-20-output-on-igpu) to output a HDMI 1.4 signal, as HDMI 2.0 mode seems to cause issues with one of my external displays. If you use a display that requires HDMI 2.0, you need to change the configuration (with the help of the linked documentation).
-- The `force-online` option is enabled in the GPU configuration. Without this option, one of my monitors needs to be turned off and on again after starting macOS. If this option causes issues for you, you can remove it.
-
 ### UEFI
 
 Here are the variable addresses and values of some important UEFI settings. Default values are in bold. Make sure your **UEFI version matches**, or else you can **permenently brick** your laptop!
