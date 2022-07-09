@@ -69,7 +69,7 @@ If you use rEFInd, make sure to initialize this repository's submodules (or clon
 
 Here are the variable addresses and values of some important UEFI settings. Default values are in bold. Make sure your **UEFI version matches**, or else you can **permenently brick** your laptop!
 
-`1.8.0`-`1.12.0`:
+`1.8.0`-`1.14.0`:
 
 - CFG Lock:
   - Address: `0x5C3`
