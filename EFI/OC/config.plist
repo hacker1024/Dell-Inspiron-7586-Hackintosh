@@ -16,6 +16,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-PLUG.aml</string>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-GPI0.aml</string>
 				<key>Path</key>
 				<string>SSDT-GPI0.aml</string>
@@ -24,9 +32,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-AWAC-DISABLE.aml</string>
 				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-AWAC-DISABLE.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -75,16 +83,6 @@
 		<array/>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Fix AsRock Z390 BIOS DSDT Device(RTC) bug</string>
-				<key>Find</key>
-				<data>oAqTU1RBUwE=</data>
-				<key>Replace</key>
-				<data>oAqRCv8L//8=</data>
-				<key>Enabled</key>
-				<false/>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Change USTP to One (to fix I2C) - adapted by u/TheRacerMaster (thanks!)</string>
