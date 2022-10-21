@@ -95,16 +95,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable the OSID check in the SMEE method (required for brightness keys)</string>
-				<key>Find</key>
-				<data>oCqSlVwuX1NCX09TSUQKIA==</data>
-				<key>Replace</key>
-				<data>o6Ojo6Ojo6Ojo6Ojo6AdAQ==</data>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Rename method BRT6 to BRTX to connect to SSDT-BRT6.aml (fixes brightness keys)</string>
 				<key>Find</key>
 				<data>QlJUNgI=</data>
