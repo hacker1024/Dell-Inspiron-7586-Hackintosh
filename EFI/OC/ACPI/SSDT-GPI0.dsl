@@ -9,9 +9,5 @@ DefinitionBlock("", "SSDT", 2, "DRTNIA", "GPI0", 0)
         {
             GPHD = Zero
         }
-        Else
-        {
-            
-        }
     }
 }
