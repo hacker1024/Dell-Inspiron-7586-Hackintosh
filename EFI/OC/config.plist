@@ -90,6 +90,26 @@
 				<data>oExIVVNUUA==</data>
 				<key>Replace</key>
 				<data>oExIAaOjow==</data>
+				<key>Mask</key>
+				<data></data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>Count</key>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -100,6 +120,26 @@
 				<data>QlJUNgI=</data>
 				<key>Replace</key>
 				<data>QlJUWAI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Mask</key>
+				<data></data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -110,6 +150,26 @@
 				<data>T1NJRA==</data>
 				<key>Replace</key>
 				<data>WFNJRA==</data>
+				<key>Mask</key>
+				<data></data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -120,6 +180,26 @@
 				<data>X09TSQ==</data>
 				<key>Replace</key>
 				<data>WE9TSQ==</data>
+				<key>Mask</key>
+				<data></data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 			</dict>
