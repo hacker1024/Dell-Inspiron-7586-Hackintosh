@@ -93,6 +93,36 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Map the power button to SBTN</string>
+				<key>Find</key>
+				<data>oACTaQCGUEJUTgqAoACTaQGGUEJUTgoC</data>
+				<key>Mask</key>
+				<data>/wD//////////////wD/////////////</data>
+				<key>Replace</key>
+				<data>oACTaQCGU0JUTgqAoACTaQGGU0JUTgoC</data>
+				<key>ReplaceMask</key>
+				<data>/wD//////////////wD/////////////</data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+				<key>Base</key>
+				<string>\_SB.BTNV</string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Change USTP to One (to fix I2C) - adapted by u/TheRacerMaster (thanks!)</string>
 				<key>Find</key>
 				<data>oExIVVNUUA==</data>
