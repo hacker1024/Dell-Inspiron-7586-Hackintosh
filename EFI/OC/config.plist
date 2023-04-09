@@ -986,6 +986,8 @@
 			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HibernateSkipsPicker</key>
+			<false/>
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>PickerAttributes</key>
@@ -1400,6 +1402,8 @@
 			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
+			<key>GopBurstMode</key>
+			<false/>
 			<key>ForceResolution</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
@@ -1494,6 +1498,8 @@
 			<integer>-1</integer>
 			<key>EnableVmx</key>
 			<false/>
+			<key>ResizeUsePciRbIo</key>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
 		<array/>
@@ -1511,6 +1517,12 @@
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
 			<integer>1</integer>
+			<key>PointerDwellClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellDoubleClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellRadius</key>
+			<integer>0</integer>
 			<key>GraphicsInputMirroring</key>
 			<true/>
 			<key>PointerPollMask</key>
