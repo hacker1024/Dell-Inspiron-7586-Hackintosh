@@ -931,6 +931,8 @@
 			<true/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DisableIoMapperMapping</key>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -1422,6 +1424,8 @@
 			<false/>
 			<key>ConsoleMode</key>
 			<string></string>
+			<key>ConsoleFont</key>
+			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>GopBurstMode</key>
@@ -1442,6 +1446,8 @@
 			<string>Max</string>
 			<key>SanitiseClearScreen</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
@@ -1484,6 +1490,8 @@
 			<key>HashServices</key>
 			<false/>
 			<key>OSInfo</key>
+			<false/>
+			<key>PciIo</key>
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
