@@ -485,6 +485,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>itlwm.kext</string>
+				<key>MaxKernel</key>
+				<string>23.99.99</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/itlwm</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>itlwm.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>AirportItlwmVentura.kext</string>
 				<key>MaxKernel</key>
 				<string>22.99.99</string>
