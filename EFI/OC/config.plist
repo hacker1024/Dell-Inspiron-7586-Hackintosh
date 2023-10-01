@@ -487,7 +487,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>itlwm.kext</string>
+				<string>AirportItlwmSonoma.kext</string>
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>PlistPath</key>
@@ -497,11 +497,11 @@
 				<key>MinKernel</key>
 				<string>23.0.0</string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/itlwm</string>
+				<string>Contents/MacOS/AirportItlwm</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>itlwm.kext</string>
+				<string>AirportItlwmSonoma.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -597,7 +597,7 @@
 				<key>Comment</key>
 				<string>IntelBTPatcher.kext</string>
 				<key>MaxKernel</key>
-				<string>21.99.99</string>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>Enabled</key>
