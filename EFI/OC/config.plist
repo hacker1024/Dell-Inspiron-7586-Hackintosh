@@ -1032,6 +1032,8 @@
 			<string>Disabled</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
+			<key>InstanceIdentifier</key>
+			<string></string>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1549,6 +1551,8 @@
 			<key>EnableVmx</key>
 			<false/>
 			<key>ResizeUsePciRbIo</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
